@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{306752FC-FA8C-4823-836F-6902FFFCD9E8}</ProjectGuid>
+    <RootNamespace>VR_Recorder</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\umar4\Source\Repos\openvr\headers;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.Core.310.6.1\include;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.HighGUI.310.6.1\include;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.ImgProc.310.6.1\include;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.ImgCodecs.310.6.1\include;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.VideoIO.310.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\umar4\Source\Repos\opencv\build\install\x64\vc15\lib;C:\Users\umar4\Source\Repos\openvr\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>openvr_api.lib;opencv_core320.lib; opencv_highgui320.lib; opencv_imgproc320.lib; opencv_imgcodecs320.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\umar4\Source\Repos\openvr\headers;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.Core.310.6.1\include;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.HighGUI.310.6.1\include;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.ImgProc.310.6.1\include;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.ImgCodecs.310.6.1\include;C:\Users\umar4\Source\VR_Recorder\packages\OpenCV.Win.VideoIO.310.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\umar4\Source\Repos\opencv\build\install\x64\vc15\lib;C:\Users\umar4\Source\Repos\openvr\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>openvr_api.lib;opencv_core320.lib; opencv_highgui320.lib; opencv_imgproc320.lib; opencv_imgcodecs320.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Recorder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\OpenCV.Win.Core.310.6.1\build\native\opencv.win.core.targets" Condition="Exists('..\packages\OpenCV.Win.Core.310.6.1\build\native\opencv.win.core.targets')" />
+    <Import Project="..\packages\OpenCV.Win.ImgProc.310.6.1\build\native\opencv.win.imgproc.targets" Condition="Exists('..\packages\OpenCV.Win.ImgProc.310.6.1\build\native\opencv.win.imgproc.targets')" />
+    <Import Project="..\packages\OpenCV.Win.ImgCodecs.310.6.1\build\native\opencv.win.imgcodecs.targets" Condition="Exists('..\packages\OpenCV.Win.ImgCodecs.310.6.1\build\native\opencv.win.imgcodecs.targets')" />
+    <Import Project="..\packages\OpenCV.Win.VideoIO.310.6.1\build\native\opencv.win.videoio.targets" Condition="Exists('..\packages\OpenCV.Win.VideoIO.310.6.1\build\native\opencv.win.videoio.targets')" />
+    <Import Project="..\packages\OpenCV.Win.HighGUI.310.6.1\build\native\opencv.win.highgui.targets" Condition="Exists('..\packages\OpenCV.Win.HighGUI.310.6.1\build\native\opencv.win.highgui.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\OpenCV.Win.Core.310.6.1\build\native\opencv.win.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCV.Win.Core.310.6.1\build\native\opencv.win.core.targets'))" />
+    <Error Condition="!Exists('..\packages\OpenCV.Win.ImgProc.310.6.1\build\native\opencv.win.imgproc.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCV.Win.ImgProc.310.6.1\build\native\opencv.win.imgproc.targets'))" />
+    <Error Condition="!Exists('..\packages\OpenCV.Win.ImgCodecs.310.6.1\build\native\opencv.win.imgcodecs.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCV.Win.ImgCodecs.310.6.1\build\native\opencv.win.imgcodecs.targets'))" />
+    <Error Condition="!Exists('..\packages\OpenCV.Win.VideoIO.310.6.1\build\native\opencv.win.videoio.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCV.Win.VideoIO.310.6.1\build\native\opencv.win.videoio.targets'))" />
+    <Error Condition="!Exists('..\packages\OpenCV.Win.HighGUI.310.6.1\build\native\opencv.win.highgui.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCV.Win.HighGUI.310.6.1\build\native\opencv.win.highgui.targets'))" />
+  </Target>
+</Project>
